@@ -1,10 +1,16 @@
 
 import 'package:flutter/material.dart';
+import 'package:pokedex/pages/abilities-page.dart';
 import 'package:pokedex/pages/pokedex-page.dart';
+import 'package:pokedex/pages/type.dart';
 import 'package:pokedex/service/services-pokemon.dart';
 import 'package:pokedex/widgets/carousel.dart';
 import 'package:pokedex/colors/colors.dart';
 import 'package:pokedex/controller/controller-search.dart';
+
+import 'itens-page.dart';
+import 'location-page.dart';
+import 'move-page.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -114,7 +120,10 @@ class _SearchPageState extends State<SearchPage> {
                         color: grassColor,
                         child: InkWell(
                           onTap: () {
-                            print("clicou1");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const AbilitiesPage()));
                           },
                           child: Center(
                               child: Text("Abilities",
@@ -134,7 +143,10 @@ class _SearchPageState extends State<SearchPage> {
                         color: fightingColor,
                         child: InkWell(
                           onTap: () {
-                            print("clicou2");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const ItensPage()));
                           },
                           child: Center(
                               child: Text("Itens",
@@ -154,7 +166,10 @@ class _SearchPageState extends State<SearchPage> {
                         color: waterColor,
                         child: InkWell(
                           onTap: () {
-                            print("clicou3");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const LocationsPage()));
                           },
                           child: Center(
                               child: Text("Locations",
@@ -174,10 +189,13 @@ class _SearchPageState extends State<SearchPage> {
                         color: electricColor,
                         child: InkWell(
                           onTap: () {
-                            print("clicou4");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const MovesPage()));
                           },
                           child: Center(
-                              child: Text("Movies",
+                              child: Text("Moves",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: size.width * .05,
@@ -217,7 +235,10 @@ class _SearchPageState extends State<SearchPage> {
                         color: darkColor,
                         child: InkWell(
                           onTap: () {
-                            print("clicou6");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const TypePage()));
                           },
                           child: Center(
                               child: Text("Types",

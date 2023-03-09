@@ -14,7 +14,7 @@ class Controller {
   String? type;
   int? heigth;
   bool theme = true;
-  bool? loading = true;
+  bool loading = true;
   List<dynamic> pokeList = [];
   List<dynamic> pokedex = [];
   List<PokemonData> list = [];
