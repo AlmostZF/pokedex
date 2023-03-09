@@ -67,7 +67,7 @@ class _PokedexPageState extends State<PokedexPage> {
                                    ),
                                    Text("Peso: ${data.height}"),
                                    Text("Nome: ${data.name}"),
-                                   Text("Numero: ${data.id}"),
+                                   Text("Numero: ${data.id}")
                                   // : Center(
                                     //   child: Text(""),
                                     // ),
