@@ -13,7 +13,7 @@ class _AbilitiesPageState extends State<AbilitiesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Abilities"),  
+        title: const Text("Abilities"),  
         backgroundColor: grassColor,
       ) 
     );

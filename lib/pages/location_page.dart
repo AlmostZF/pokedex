@@ -13,7 +13,7 @@ class _LocationsPageState extends State<LocationsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Locations"),
+        title: const Text("Locations"),
         backgroundColor: waterColor,  
       ) 
     );

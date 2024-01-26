@@ -1,16 +1,14 @@
 
 import 'package:flutter/material.dart';
-import 'package:pokedex/pages/abilities-page.dart';
-import 'package:pokedex/pages/pokedex-page.dart';
+import 'package:pokedex/controller/controller_search.dart';
+import 'package:pokedex/pages/abilities_page.dart';
+import 'package:pokedex/pages/pokedex_page.dart';
 import 'package:pokedex/pages/type.dart';
-import 'package:pokedex/service/services-pokemon.dart';
-import 'package:pokedex/widgets/carousel.dart';
 import 'package:pokedex/colors/colors.dart';
-import 'package:pokedex/controller/controller-search.dart';
 
-import 'itens-page.dart';
-import 'location-page.dart';
-import 'move-page.dart';
+import 'itens_page.dart';
+import 'location_page.dart';
+import 'move_page.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -89,14 +87,14 @@ class _SearchPageState extends State<SearchPage> {
                           borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide.none),
                       hintText: 'Search',
-                      hintStyle: TextStyle(color: blackDefault, fontSize: 18),
+                      hintStyle: const TextStyle(color: blackDefault, fontSize: 18),
                       prefixIcon: Container(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
+                        width: 18,
                         child: const Icon(
                           Icons.search_rounded,
                           color: blackDefault,
                         ),
-                        width: 18,
                       )),
                   onSubmitted: (value) {
                     _init();
@@ -105,13 +103,13 @@ class _SearchPageState extends State<SearchPage> {
                 ),
               ),
 
-              Container(
+              SizedBox(
                 height: 95,
                 child: ListView(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   children: [
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
                       child: Container(
@@ -134,7 +132,7 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
                       child: Container(
@@ -157,7 +155,7 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
                       child: Container(
@@ -180,7 +178,7 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
                       child: Container(
@@ -203,7 +201,7 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
                       child: Container(
@@ -226,7 +224,7 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                     ClipRRect(
                       borderRadius: BorderRadius.circular(25),
                       child: Container(
@@ -249,7 +247,7 @@ class _SearchPageState extends State<SearchPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 12),
+                    const SizedBox(width: 12),
                   ],
                 ),
               )

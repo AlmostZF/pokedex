@@ -13,7 +13,7 @@ class _TypePageState extends State<TypePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Type"),  
+        title: const Text("Type"),  
         backgroundColor: darkColor,
       ) 
     );

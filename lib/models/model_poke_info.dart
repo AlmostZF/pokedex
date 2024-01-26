@@ -26,31 +26,38 @@ class Pokemon {
 }
 
 class PokemonData {
-  int? id;
-  String? name;
+  int id;
+  String name;
   int? height;
   String? sprites;
+  dynamic type;
 
   PokemonData({
-    this.id,
-    this.name,
+    this.id = 0,
+    this.name = '',
     this.height,
     this.sprites,
+    this.type,
   });
 
+  @override
+  String toString() {
+    return 'PokemonData{name: $name,type: $type}';
+  }
+
   factory PokemonData.fromJson(Map<String, dynamic> json) => PokemonData(
-        id: json["id"] == null ? null : json["id"],
-        name: json["name"] == null ? null : json["name"],
-        height: json["height"] == null ? null : json["height"],
-        sprites: json["sprites"] == null
-            ? null
-            : json["sprites"],
+        id: json["id"],
+        name: json["name"],
+        height: json["height"],
+        type: json["types"],
+        sprites: json["sprites"]
       );
 
   Map<String, dynamic> toJson() => {
-        "id": id == null ? null : id,
-        "name": name == null ? null : name,
-        "height": height == null ? null : height,
-        "sprites": sprites == null ? null : sprites,
+        "id": id,
+        "name": name,
+        "height": height,
+        "sprites": sprites,
+        "type": type
       };
 }

@@ -8,8 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:pokedex/main.dart';
-import 'package:pokedex/pages/my-home.dart';
+import 'package:pokedex/pages/my_home.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

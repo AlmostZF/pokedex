@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:pokedex/pages/poke-page.dart';
-import 'package:pokedex/pages/search-pokemon.dart';
+import 'package:pokedex/pages/search_pokemon.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

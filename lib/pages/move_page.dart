@@ -13,7 +13,7 @@ class _MovesPageState extends State<MovesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Moves"),  
+        title: const Text("Moves"),  
         backgroundColor: electricColor,
       ) 
     );

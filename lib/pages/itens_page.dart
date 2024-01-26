@@ -13,7 +13,7 @@ class _ItensPageState extends State<ItensPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Itens"),  
+        title: const Text("Itens"),  
         backgroundColor: fightingColor,
       ) 
     );
